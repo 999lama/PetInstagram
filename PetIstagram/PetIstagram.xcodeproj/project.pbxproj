@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE67FA212BA507A60085CA70 /* PetIstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA202BA507A60085CA70 /* PetIstagramApp.swift */; };
+		CE67FA232BA507A60085CA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA222BA507A60085CA70 /* ContentView.swift */; };
+		CE67FA252BA507A80085CA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE67FA242BA507A80085CA70 /* Assets.xcassets */; };
+		CE67FA282BA507A80085CA70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE67FA272BA507A80085CA70 /* Preview Assets.xcassets */; };
+		CE67FA2A2BA507A80085CA70 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA292BA507A80085CA70 /* Persistence.swift */; };
+		CE67FA2D2BA507A80085CA70 /* PetIstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA2B2BA507A80085CA70 /* PetIstagram.xcdatamodeld */; };
+		CE67FA372BA507A80085CA70 /* PetIstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA362BA507A80085CA70 /* PetIstagramTests.swift */; };
+		CE67FA412BA507A80085CA70 /* PetIstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA402BA507A80085CA70 /* PetIstagramUITests.swift */; };
+		CE67FA432BA507A80085CA70 /* PetIstagramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA422BA507A80085CA70 /* PetIstagramUITestsLaunchTests.swift */; };
+		CE67FA502BA507C60085CA70 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA4F2BA507C60085CA70 /* Post.swift */; };
+		CE67FA522BA5127F0085CA70 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA512BA5127F0085CA70 /* APIRequest.swift */; };
+		CE67FA542BA513290085CA70 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA532BA513290085CA70 /* PostRequest.swift */; };
+		CE67FA562BA513D00085CA70 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA552BA513D00085CA70 /* APIClient.swift */; };
+		CE67FA582BA514660085CA70 /* APIEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA572BA514660085CA70 /* APIEnviroment.swift */; };
+		CE67FA602BA51A4A0085CA70 /* PostRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA5F2BA51A4A0085CA70 /* PostRequestTest.swift */; };
+		CE67FA622BA51A800085CA70 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67FA612BA51A800085CA70 /* JsonData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE67FA332BA507A80085CA70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE67FA152BA507A60085CA70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE67FA1C2BA507A60085CA70;
+			remoteInfo = PetIstagram;
+		};
+		CE67FA3D2BA507A80085CA70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE67FA152BA507A60085CA70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE67FA1C2BA507A60085CA70;
+			remoteInfo = PetIstagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE67FA1D2BA507A60085CA70 /* PetIstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetIstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE67FA202BA507A60085CA70 /* PetIstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetIstagramApp.swift; sourceTree = "<group>"; };
+		CE67FA222BA507A60085CA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE67FA242BA507A80085CA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE67FA272BA507A80085CA70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE67FA292BA507A80085CA70 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CE67FA2C2BA507A80085CA70 /* PetIstagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetIstagram.xcdatamodel; sourceTree = "<group>"; };
+		CE67FA322BA507A80085CA70 /* PetIstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetIstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE67FA362BA507A80085CA70 /* PetIstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetIstagramTests.swift; sourceTree = "<group>"; };
+		CE67FA3C2BA507A80085CA70 /* PetIstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetIstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE67FA402BA507A80085CA70 /* PetIstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetIstagramUITests.swift; sourceTree = "<group>"; };
+		CE67FA422BA507A80085CA70 /* PetIstagramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetIstagramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE67FA4F2BA507C60085CA70 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CE67FA512BA5127F0085CA70 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		CE67FA532BA513290085CA70 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		CE67FA552BA513D00085CA70 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CE67FA572BA514660085CA70 /* APIEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnviroment.swift; sourceTree = "<group>"; };
+		CE67FA5F2BA51A4A0085CA70 /* PostRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTest.swift; sourceTree = "<group>"; };
+		CE67FA612BA51A800085CA70 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE67FA1A2BA507A60085CA70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE67FA2F2BA507A80085CA70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE67FA392BA507A80085CA70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE67FA142BA507A60085CA70 = {
+			isa = PBXGroup;
+			children = (
+				CE67FA1F2BA507A60085CA70 /* PetIstagram */,
+				CE67FA352BA507A80085CA70 /* PetIstagramTests */,
+				CE67FA3F2BA507A80085CA70 /* PetIstagramUITests */,
+				CE67FA1E2BA507A60085CA70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE67FA1E2BA507A60085CA70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA1D2BA507A60085CA70 /* PetIstagram.app */,
+				CE67FA322BA507A80085CA70 /* PetIstagramTests.xctest */,
+				CE67FA3C2BA507A80085CA70 /* PetIstagramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE67FA1F2BA507A60085CA70 /* PetIstagram */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA5E2BA51A020085CA70 /* Supporting files */,
+				CE67FA5A2BA519AE0085CA70 /* Service Layer */,
+				CE67FA592BA519A40085CA70 /* UI */,
+				CE67FA292BA507A80085CA70 /* Persistence.swift */,
+				CE67FA2B2BA507A80085CA70 /* PetIstagram.xcdatamodeld */,
+				CE67FA262BA507A80085CA70 /* Preview Content */,
+			);
+			path = PetIstagram;
+			sourceTree = "<group>";
+		};
+		CE67FA262BA507A80085CA70 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA272BA507A80085CA70 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE67FA352BA507A80085CA70 /* PetIstagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA362BA507A80085CA70 /* PetIstagramTests.swift */,
+				CE67FA5F2BA51A4A0085CA70 /* PostRequestTest.swift */,
+				CE67FA612BA51A800085CA70 /* JsonData.swift */,
+			);
+			path = PetIstagramTests;
+			sourceTree = "<group>";
+		};
+		CE67FA3F2BA507A80085CA70 /* PetIstagramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA402BA507A80085CA70 /* PetIstagramUITests.swift */,
+				CE67FA422BA507A80085CA70 /* PetIstagramUITestsLaunchTests.swift */,
+			);
+			path = PetIstagramUITests;
+			sourceTree = "<group>";
+		};
+		CE67FA592BA519A40085CA70 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA222BA507A60085CA70 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE67FA5A2BA519AE0085CA70 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA5D2BA519E60085CA70 /* Requests */,
+				CE67FA5C2BA519DE0085CA70 /* Models */,
+				CE67FA5B2BA519C60085CA70 /* Network Engine */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		CE67FA5B2BA519C60085CA70 /* Network Engine */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA512BA5127F0085CA70 /* APIRequest.swift */,
+				CE67FA552BA513D00085CA70 /* APIClient.swift */,
+				CE67FA572BA514660085CA70 /* APIEnviroment.swift */,
+			);
+			path = "Network Engine";
+			sourceTree = "<group>";
+		};
+		CE67FA5C2BA519DE0085CA70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA4F2BA507C60085CA70 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE67FA5D2BA519E60085CA70 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA532BA513290085CA70 /* PostRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CE67FA5E2BA51A020085CA70 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CE67FA202BA507A60085CA70 /* PetIstagramApp.swift */,
+				CE67FA242BA507A80085CA70 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE67FA1C2BA507A60085CA70 /* PetIstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE67FA462BA507A80085CA70 /* Build configuration list for PBXNativeTarget "PetIstagram" */;
+			buildPhases = (
+				CE67FA192BA507A60085CA70 /* Sources */,
+				CE67FA1A2BA507A60085CA70 /* Frameworks */,
+				CE67FA1B2BA507A60085CA70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetIstagram;
+			productName = PetIstagram;
+			productReference = CE67FA1D2BA507A60085CA70 /* PetIstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE67FA312BA507A80085CA70 /* PetIstagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE67FA492BA507A80085CA70 /* Build configuration list for PBXNativeTarget "PetIstagramTests" */;
+			buildPhases = (
+				CE67FA2E2BA507A80085CA70 /* Sources */,
+				CE67FA2F2BA507A80085CA70 /* Frameworks */,
+				CE67FA302BA507A80085CA70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE67FA342BA507A80085CA70 /* PBXTargetDependency */,
+			);
+			name = PetIstagramTests;
+			productName = PetIstagramTests;
+			productReference = CE67FA322BA507A80085CA70 /* PetIstagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE67FA3B2BA507A80085CA70 /* PetIstagramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE67FA4C2BA507A80085CA70 /* Build configuration list for PBXNativeTarget "PetIstagramUITests" */;
+			buildPhases = (
+				CE67FA382BA507A80085CA70 /* Sources */,
+				CE67FA392BA507A80085CA70 /* Frameworks */,
+				CE67FA3A2BA507A80085CA70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE67FA3E2BA507A80085CA70 /* PBXTargetDependency */,
+			);
+			name = PetIstagramUITests;
+			productName = PetIstagramUITests;
+			productReference = CE67FA3C2BA507A80085CA70 /* PetIstagramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE67FA152BA507A60085CA70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE67FA1C2BA507A60085CA70 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CE67FA312BA507A80085CA70 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CE67FA1C2BA507A60085CA70;
+					};
+					CE67FA3B2BA507A80085CA70 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CE67FA1C2BA507A60085CA70;
+					};
+				};
+			};
+			buildConfigurationList = CE67FA182BA507A60085CA70 /* Build configuration list for PBXProject "PetIstagram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE67FA142BA507A60085CA70;
+			productRefGroup = CE67FA1E2BA507A60085CA70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE67FA1C2BA507A60085CA70 /* PetIstagram */,
+				CE67FA312BA507A80085CA70 /* PetIstagramTests */,
+				CE67FA3B2BA507A80085CA70 /* PetIstagramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE67FA1B2BA507A60085CA70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE67FA282BA507A80085CA70 /* Preview Assets.xcassets in Resources */,
+				CE67FA252BA507A80085CA70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE67FA302BA507A80085CA70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE67FA3A2BA507A80085CA70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE67FA192BA507A60085CA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE67FA2A2BA507A80085CA70 /* Persistence.swift in Sources */,
+				CE67FA542BA513290085CA70 /* PostRequest.swift in Sources */,
+				CE67FA2D2BA507A80085CA70 /* PetIstagram.xcdatamodeld in Sources */,
+				CE67FA562BA513D00085CA70 /* APIClient.swift in Sources */,
+				CE67FA582BA514660085CA70 /* APIEnviroment.swift in Sources */,
+				CE67FA232BA507A60085CA70 /* ContentView.swift in Sources */,
+				CE67FA212BA507A60085CA70 /* PetIstagramApp.swift in Sources */,
+				CE67FA522BA5127F0085CA70 /* APIRequest.swift in Sources */,
+				CE67FA502BA507C60085CA70 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE67FA2E2BA507A80085CA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE67FA622BA51A800085CA70 /* JsonData.swift in Sources */,
+				CE67FA372BA507A80085CA70 /* PetIstagramTests.swift in Sources */,
+				CE67FA602BA51A4A0085CA70 /* PostRequestTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE67FA382BA507A80085CA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE67FA432BA507A80085CA70 /* PetIstagramUITestsLaunchTests.swift in Sources */,
+				CE67FA412BA507A80085CA70 /* PetIstagramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE67FA342BA507A80085CA70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE67FA1C2BA507A60085CA70 /* PetIstagram */;
+			targetProxy = CE67FA332BA507A80085CA70 /* PBXContainerItemProxy */;
+		};
+		CE67FA3E2BA507A80085CA70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE67FA1C2BA507A60085CA70 /* PetIstagram */;
+			targetProxy = CE67FA3D2BA507A80085CA70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE67FA442BA507A80085CA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE67FA452BA507A80085CA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE67FA472BA507A80085CA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PetIstagram/Preview Content\"";
+				DEVELOPMENT_TEAM = J3K9GM43VT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lama.PetIstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE67FA482BA507A80085CA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PetIstagram/Preview Content\"";
+				DEVELOPMENT_TEAM = J3K9GM43VT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lama.PetIstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE67FA4A2BA507A80085CA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3K9GM43VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lama.PetIstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetIstagram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetIstagram";
+			};
+			name = Debug;
+		};
+		CE67FA4B2BA507A80085CA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3K9GM43VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lama.PetIstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetIstagram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetIstagram";
+			};
+			name = Release;
+		};
+		CE67FA4D2BA507A80085CA70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3K9GM43VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lama.PetIstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PetIstagram;
+			};
+			name = Debug;
+		};
+		CE67FA4E2BA507A80085CA70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3K9GM43VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lama.PetIstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PetIstagram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE67FA182BA507A60085CA70 /* Build configuration list for PBXProject "PetIstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE67FA442BA507A80085CA70 /* Debug */,
+				CE67FA452BA507A80085CA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE67FA462BA507A80085CA70 /* Build configuration list for PBXNativeTarget "PetIstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE67FA472BA507A80085CA70 /* Debug */,
+				CE67FA482BA507A80085CA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE67FA492BA507A80085CA70 /* Build configuration list for PBXNativeTarget "PetIstagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE67FA4A2BA507A80085CA70 /* Debug */,
+				CE67FA4B2BA507A80085CA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE67FA4C2BA507A80085CA70 /* Build configuration list for PBXNativeTarget "PetIstagramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE67FA4D2BA507A80085CA70 /* Debug */,
+				CE67FA4E2BA507A80085CA70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE67FA2B2BA507A80085CA70 /* PetIstagram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE67FA2C2BA507A80085CA70 /* PetIstagram.xcdatamodel */,
+			);
+			currentVersion = CE67FA2C2BA507A80085CA70 /* PetIstagram.xcdatamodel */;
+			path = PetIstagram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE67FA152BA507A60085CA70 /* Project object */;
+}
